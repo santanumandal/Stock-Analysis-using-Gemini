@@ -1,0 +1,7 @@
+{
+  "name": "Santanu's_BharatStock Insight",
+  "description": "An intuitive AI-powered stock analysis tool for the Indian market, providing simplified summaries, peer comparisons, and real-time news for every investor.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
