@@ -20,13 +20,37 @@ export interface NewsItem {
   sentiment: 'positive' | 'negative' | 'neutral';
 }
 
+export interface QuarterlyPerformance {
+  period: string;
+  sales: number;
+  profit: number;
+}
+
+export interface DividendHistory {
+  date: string;
+  amount: string;
+  type: string;
+}
+
+export interface QualityFactor {
+  factor: string;
+  description: string;
+  indicator: string;
+  status: 'Good' | 'Average' | 'Risk';
+}
+
 export interface StockAnalysis {
   ticker: string;
   companyName: string;
+  industry: string;
+  industryPE: string;
   currentPrice: string;
   metrics: Metric[];
   peerComparison: PeerComparison[];
   historicalPerformance: string;
+  quarterlyHistory: QuarterlyPerformance[];
+  dividendHistory: DividendHistory[];
+  qualityFactors: QualityFactor[];
   latestNews: NewsItem[];
   shortTermRecommendation: string;
   longTermRecommendation: string;
